@@ -32,14 +32,14 @@
 *  Add resource file end resource header for restitute version + icon OpenGL.ico for fun
 *  because versionning is important, same for freeware :-) !
 *
-*  Date : 2015/11/14
+*  Date : 2015/11/29
 *
 * \file            Lesson03.c
 * \author          Jeff Molofee ( NeHe ) originely, Modified for LCCWin32 compiler by Robert Wishlaw 2002/11/23
 * \author          After adapted by Thierry Dechaize to verify paradigm : one source for multiple C Compilers
 * \version         1.0.1.2
-* \date            14 novembre 2015
-* \brief           Ouvre une simple fenêtre Windows et dessine deux formes avec OpenGL : un triangle et un carré.
+* \date            29 novembre 2015
+* \brief           Ouvre une simple fenêtre Windows et dessine deux formes avec OpenGL : un triangle et un carré colorés.
 * \details         Ce programme ne gére que deux événements : le clic sur le bouton "Fermé" de la fenêtre ou la sortie par la touche ESC.
 *
 *
@@ -58,6 +58,8 @@
 #include <gl\gl.h>			// Header File For The OpenGL32 Library
 #include <gl\glu.h>			// Header File For The GLu32 Library
 /* #include <gl\glaux.h>		// Header File For The Glaux Library */
+
+#include "resource.h"
 
 HDC			hDC=NULL;		// Private GDI Device Context
 HGLRC		hRC=NULL;		// Permanent Rendering Context
@@ -186,7 +188,7 @@ GLvoid KillGLWindow(GLvoid)								// Properly Kill The Window
 	}
 }
 
-/*	This Code Creates Our OpenGL Window.  Parameters Are:					*
+/**	This Code Creates Our OpenGL Window.  Parameters Are:					*
  *	title			- Title To Appear At The Top Of The Window				*
  *	width			- Width Of The GL Window Or Fullscreen Mode				*
  *	height			- Height Of The GL Window Or Fullscreen Mode			*

@@ -81,7 +81,7 @@
 #define VER_LEGALTRADEMARKS1_STR 	"Neon Helium Productions\0"
 #define VER_LEGALTRADEMARKS2_STR 	"See usage rules on www -> nehe.gamedev.net\0"
 #define VER_ORIGINALFILENAME_STR 	"Lesson03.exe\0"
-#define VER_PRODUCTNAME_STR 		"Lesson03 OpenGL : Creating Your First Polygon & Quad.\0"
+#define VER_PRODUCTNAME_STR 		"Lesson03 OpenGL : Creating colored Polygon & Quad.\0"
 #define VER_DATE_BUILD 	            "May 2013\0"
 #define VER_COMMENTS	            "Paradigm : one source for multiple free C compilers\0"
 #define VER_SUPPORT 	            "thierry.dechaize@gmail.com\0"
